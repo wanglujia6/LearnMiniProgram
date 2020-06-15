@@ -1,12 +1,29 @@
 {
   "pages": [
-    "pages/home/home"
+    "pages/home/home",
+    "pages/category/categroy"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "我的小程序",
+    "backgroundColor": "#ff5777",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath":"assets/tabbar/home.jpg",
+      "selectedIconPath":"assets/tabbar/home-active.jpg"
+    },{
+      "pagePath": "pages/category/categroy",
+      "text": "分类",
+      "iconPath":"assets/tabbar/fenlei.jpg",
+      "selectedIconPath":"assets/tabbar/fenlei-active.jpg"
+    }],
+    "selectedColor": "#ff5777"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

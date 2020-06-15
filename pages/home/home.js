@@ -1,66 +1,38 @@
-// pages/home/home.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    name: 'luke',
+    age: 18,
+    students: [{
+        id: 110,
+        name: 'haha',
+        age: 18
+      },
+      {
+        id: 111,
+        name: 'luke',
+        age: 23
+      },
+    ],
+    counter: 0
   },
+  handleBtnClick() {
+    //界面不刷新
+    // console.log("按钮点击")
+    // this.data.counter += 1
+    // console.log(this.data.counter)
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+    //this.setData() 界面会刷新
+    this.setData({
+      counter: this.data.counter + 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  handleSubClick(){
+    this.setData({
+      counter: this.data.counter -1
+    })
   }
 })
+
+//编程范式
+//1、命令式编程：原生操作DOM 对DOM进行操作
+//2、声明式变成：比如vue对变量进行操作
