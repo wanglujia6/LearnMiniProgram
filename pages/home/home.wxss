@@ -1,0 +1,8 @@
+/* pages/home/home.wxss */
+.title{
+  color: red;
+  margin: 20px;
+}
+.btn{
+  margin: 20px;
+}
